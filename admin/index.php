@@ -11,8 +11,8 @@
     $action = (isset($_GET["a"])) ? $_GET["a"] : "";
 
     if(empty($module) || empty($action)) {
-        $module = "common";
-        $action = "login";
+        $module = "views";
+        $action = "index";
     }
 
     $path = "modules/" . $module . "/" . $action . ".php";
