@@ -1,0 +1,260 @@
+.warrper {
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.main-header {
+    background-color: rgba(255, 255, 255, .9);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.content-wrapper {
+    margin-top: 57.4px
+}
+
+.main-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    overflow: hidden;
+    min-height: 100vh;
+    background-color: #343a40;
+    transition: all .3s ease;
+}
+
+.main-sidebar-mobile {
+    background-color: #343a40;
+}
+
+.main-sidebar.show {
+    width: 250px;
+}
+
+.sidebar-header .logo {
+    text-decoration: none;
+    padding: 16px;
+    border-bottom: 1px solid #c2c7d0;
+}
+
+.sidebar-header .logo span:first-child {
+    color: #fff;
+    font-weight: 700;
+}
+
+
+.sidebar-header .profile {
+    display: flex;
+    align-items: center;
+    padding: 16px 8px;
+    border-bottom: 1px solid #c2c7d0;
+}
+
+.sidebar-header .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.sidebar-header .profile span {
+    margin-left: 12px;
+    font-size: 16px;
+    color: #c2c7d0;
+}
+
+.sidebar-content {
+    padding: 24px 8px;
+}
+
+.sidebar-content form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: .5rem;
+}
+
+.sidebar-content form input {
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-color: #56606a;
+    background-color: #3f474e;
+} 
+
+.sidebar-content form input:focus {
+    box-shadow: none;
+    background-color: #3f474e;
+    border-color: #56606a;
+    color: #c2c7d0;
+
+}
+
+.sidebar-content form button {
+    padding: 6px 8px;
+    background-color: #3f474e;
+    border: 1px solid #56606a;
+    color: #c2c7d0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+}
+
+.sidebar-content .nav-title {
+    color: #fff;
+}
+
+.sidebar-content .nav-link {
+    transition: all 0.3s linear;
+}
+
+.sidebar-content .nav-link:hover {
+    background-color: rgba(255, 255, 255, .1);
+    color: #fff;
+}
+
+.sidebar-content .nav-link.check {
+    background-color: rgba(255, 255, 255, .1) !important;
+    color: #fff !important;
+}
+
+.sidebar-content .nav-link {
+    display: block;
+    margin-bottom: .25rem;
+    padding: 8px 16px;
+    border-radius: .25rem;
+    color: #c2c7d0;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgba(255, 255, 255, .1);
+    color: #fff;
+}
+
+.accordion-button i:last-child {
+    font-size: .8rem;
+    transition: all 0.35s ease-in-out;
+}
+
+.accordion-button:not(.collapsed) i:last-child {
+    transform: rotate(90deg);
+}
+
+.main-content {
+    margin-left: 250px;
+    transition: all .3s ease;
+}
+
+.main-header {
+    width: 100%;
+}
+
+.text-short {
+    display: -webkit-box;
+    overflow: hidden;
+    line-height: 1.6rem;
+    height: 1.6rem;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+form input.form-control {
+    font-size: 14px;
+}
+
+form input.form-control:focus {
+    box-shadow: none;
+    background-color: transparent;
+}
+
+form select.form-select {
+    border: none;
+}
+
+form select.form-select:focus {
+    box-shadow: none;
+}
+
+form .form-group-flex {
+    display: flex;
+    align-items: center;
+    padding-right: 8px;
+    border: 1px solid #ccc;
+    border-radius: .25rem;
+}
+
+form .form-group-flex input {
+    border: 0;
+}
+
+form .form-group.invalid div{
+    border-color: rgb(236, 22, 22);
+}
+
+form .form-group .form-message {
+    font-size: 12px;
+    color: rgb(236, 22, 22);
+}
+
+
+form .form-group .show-password {
+    cursor: pointer;
+}
+
+
+/* Responsive */
+@media (min-width: 1024px) {
+    .btn-show-sidebar-mobile {
+        display: none;
+    }
+
+    form .form-group-flex {
+        max-width: 50%;
+    }
+
+    .offcanvas {
+        display: none;
+    }
+}
+
+@media(min-width: 767px) and (max-width: 1024px) {
+
+    .btn-show-sidebar-mobile {
+        display: none;
+    }
+
+    .offcanvas {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .btn-show-sidebar, .main-sidebar {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    form .form-group-flex {
+        max-width: 100%;
+    }
+
+    table {
+        min-width: 300%;
+    }
+}

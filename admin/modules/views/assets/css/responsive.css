@@ -1,0 +1,21 @@
+@media(min-width: 768px) {
+    .offcanvas {
+        display: none;
+    }
+}
+
+@media(max-width: 468px) {
+    .header__logo-img {
+        width: 35%;
+    }
+
+    .main-banner .banner-item {
+        padding-top: 75%;
+    }
+
+    .main-banner .slick-prev,
+    .main-banner .slick-next,
+    .main-banner .slick-dots {
+        display: none;
+    }
+}
