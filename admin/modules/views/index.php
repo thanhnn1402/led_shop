@@ -9,7 +9,6 @@
 
     $services = db_service_get_all();
 
-
 ?>
 
 <!DOCTYPE html>
